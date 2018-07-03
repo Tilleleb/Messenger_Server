@@ -1,9 +1,6 @@
 package messenger.DbService;
 
-import java.util.List;
 import messenger.Domain.Chat;
-import messenger.Domain.GroupConversation;
-import messenger.Domain.UserChat;
 
 public interface ChatService {
 
@@ -37,4 +34,12 @@ public interface ChatService {
 	 */
 	public <T> void removeObject(T entity);
 
+	/**
+	 * get chat object to corresponding chatId
+	 * 
+	 * @param chatId of the user
+	 * @return chat object
+	 *            
+	 */
+	public Chat getChatById(Long chatId);
 }

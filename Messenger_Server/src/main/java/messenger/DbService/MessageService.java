@@ -1,7 +1,5 @@
 package messenger.DbService;
 
-import java.util.List;
-
 public interface MessageService {
 
 	/**

@@ -36,10 +36,10 @@ public interface UserManagement {
 	 * checks login credentials
 	 * @param username name of an user
 	 * @param password password of the user
-	 * @return id of the user<br>
-	 * 0 when credentials not found
+	 * @return user<br>
+	 * null when credentials not found
 	 */
-	public int loginUser(String username, String password);
+	public User loginUser(String username, String password);
 	
 	/**
 	 * list with all users

@@ -1,7 +1,5 @@
 package messenger.ChatService;
 
-import messenger.Domain.Chat;
-
 public interface ChatValidation {
 
 	/**

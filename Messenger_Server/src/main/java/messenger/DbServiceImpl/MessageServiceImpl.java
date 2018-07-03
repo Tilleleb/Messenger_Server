@@ -1,6 +1,8 @@
 package messenger.DbServiceImpl;
 
 
+import java.io.Serializable;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -11,8 +13,13 @@ import messenger.DbService.MessageService;
 
 @Service
 @Scope("singleton")
-public class MessageServiceImpl implements MessageService {
+public class MessageServiceImpl implements MessageService, Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	@PersistenceContext
 	private EntityManager em;
 

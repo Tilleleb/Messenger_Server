@@ -19,6 +19,11 @@ import messenger.Domain.User;
 @Scope("singleton")
 public class UserServiceImpl implements UserService, Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	@PersistenceContext
 	private EntityManager em;
 
@@ -48,6 +53,13 @@ public class UserServiceImpl implements UserService, Serializable {
 	public User getUserByName(String username) {
 		TypedQuery<User> query = em.createQuery("SELECT user FROM User user WHERE username = :username", User.class);
 		query.setParameter("username", username);
+		return query.getSingleResult();
+	}
+
+	@Override
+	public User getUserById(Long userId) {
+		TypedQuery<User> query = em.createQuery("SELECT user FROM User user WHERE userid = :userid", User.class);
+		query.setParameter("userid", userId);
 		return query.getSingleResult();
 	}
 	

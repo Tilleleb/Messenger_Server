@@ -53,4 +53,13 @@ public interface UserService {
 	 */
 	public User getUserByName(String username);
 	
+	/**
+	 * get user object to corresponding userId
+	 * 
+	 * @param userId of the user
+	 * @return user object
+	 *            
+	 */
+	public User getUserById(Long userId);
+	
 }

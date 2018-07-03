@@ -17,7 +17,12 @@ import javax.persistence.JoinColumn;
 @Entity
 public class User implements Serializable {
 
-    @GeneratedValue
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@GeneratedValue
     @Id
     @Column(name = "USER_ID")
     private Long userId;
@@ -65,14 +70,14 @@ public class User implements Serializable {
 	}
 
 
-	public List<User> getContactOf() {
-		return contactOf;
-	}
+//	public List<User> getContactOf() {
+//		return contactOf;
+//	}
 
 
-	public void setContactOf(List<User> contactOf) {
-		this.contactOf = contactOf;
-	}
+//	public void setContactOf(List<User> contactOf) {
+//		this.contactOf = contactOf;
+//	}
 
 
 

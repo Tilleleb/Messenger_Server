@@ -22,7 +22,12 @@ import javax.persistence.OneToMany;
 @Inheritance(strategy=InheritanceType.JOINED)
 public class Chat implements Serializable {
 
-    @GeneratedValue
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@GeneratedValue
     @Id
     @Column(name = "CHAT_ID")
     private Long chatId;
