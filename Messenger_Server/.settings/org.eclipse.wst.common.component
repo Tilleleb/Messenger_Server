@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="MessengerMaven">
+    <wb-module deploy-name="messenger_server">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <property name="context-root" value="MessengerMaven"/>
-        <property name="java-output-path" value="/MessengerMaven/target/classes"/>
+        <property name="context-root" value="messenger_server"/>
+        <property name="java-output-path" value="/messenger_server/target/classes"/>
     </wb-module>
 </project-modules>
